@@ -1,0 +1,238 @@
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+/* ------------------------------ */
+.post-container{
+    height: 80vh;
+}
+.post-container .rs-row, .post-container .rs-col, .post-container .rs-carousel{
+    height: 100%;
+}
+.post-description{
+    margin: 0;
+}
+.comments-container{
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 448px;
+}
+.comments-container::-webkit-scrollbar {
+    display: none;
+}
+.post-detail-group-btn p {
+    margin: 0;
+    cursor: pointer;
+}
+.comment{
+    margin-bottom: 12px;
+    width: 300px;
+}
+.comment-owner-avt{
+    margin-top: 17px;
+    margin-right: 10px;
+}
+.comment-owner{
+    font-weight: bold;
+}
+.comment-content .sub{
+    height: 17px;
+}
+.reply-comment{
+    margin-left: 30px;
+    max-width: 60px;
+}
+.reply-form{
+    width: 350px;
+}
+/* ---------------------------------------- */
+.main-content{
+    margin-left: 415px;
+    /* max-width: 510px;  */
+    width: 100%;
+}
+.This-is-main{
+    max-width: 520px;
+}
+.main-content aside{
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.side-nav{
+    height: 100vh;
+    border-right: black solid 1px;
+    margin-left: 20px;
+    position: fixed;
+}
+.side-nav h1{
+    font-size: 2rem;
+}
+.search-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.rs-nav{
+    min-width: 300px;
+    height: 570px;
+}
+.rs-nav-item{
+    font-size: 1.3rem;
+    height: 56px;
+    width: 257px;
+}
+/* ---------------------------- */
+.post{
+    height: 780px;
+    padding-bottom: 20px;
+    margin-bottom: 12px;
+    border-bottom: solid 1px;
+}
+.post .rs-content{
+    height: 585px;
+}
+.post .rs-content .rs-carousel{
+    height: 100%;
+}
+.post .rs-footer{
+    max-height: 160px;
+}
+.post .post-btn{
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+}
+.post-description{
+    height: 30px;
+}
+.view-comment{
+    margin: 0;
+    margin-bottom: 4px;
+}
+.view-comment:hover{
+    cursor: pointer;
+}
+.post form{
+    position: relative;
+}
+.post form .emoji-picker-react{
+    position: absolute;
+    right: -380px;
+    top: -320px;
+}
+/* -------------------------- */
+.post-btn input{
+    display: none;
+}
+.post-btn label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.post-btn label ion-icon {
+    animation: dislike 0.5s ease 0s;
+}
+
+.post-btn input:checked + label ion-icon {
+    color: red;
+    animation: like 0.5s ease 0s ;
+}
+@keyframes like {
+    75% {
+      transform: scale(1.25);
+    }
+  }
+@keyframes dislike {
+    75% {
+      transform: scale(0.75);
+    }
+  }
+
+/* -------------------------------- */
+.uppost-form{
+    width: 1000px;
+}
+.uppost-form legend{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.preview-imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+.preview-imgs li img{
+    margin-right: 20px;
+    height: 300px;
+    position: relative;
+}
+.preview-imgs .container{
+    position: relative;
+}
+.preview-imgs .rm-btn{
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    top: 70px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+    cursor: pointer;
+}
+.preview-imgs .rm-btn:hover{
+    transition: 0.5s;
+    color: silver;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+/* --------------------------------------- */
+.profile-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    height: 320px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.profile-post img{
+    height: 300px;
+}
+.profile{
+    width: 61vw;
+}
+.avatar-box .rs-modal-content{
+    box-shadow: none;
+    background-color: transparent;
+}
+.avatar-box .rs-modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* ---------------------------------------------- */
+/* .Home{
+    width: 100%;
+} */
